@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FoxLearn</title>
+  <link rel="stylesheet" href="cuestionario.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="theme-toggle">
+        <button id="toggleTheme">🌙</button>
+      </div>
+
+  <div class="progress">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <div class="bot">
+    <img src="tuki.png" alt="fox Bot">
+    <div class="msg" id="pregunta">¿Por qué quieres aprender esta materia?</div>
+  </div>
+
+  <div class="options" id="opciones">
+    <div class="option"><img src="icons/estudios.png" alt=""><span>Impulsar mis estudios</span></div>
+    <div class="option"><img src="icons/mente.png" alt=""><span>Ejercitar mi mente</span></div>
+    <div class="option"><img src="icons/viajar.png" alt=""><span>Prepararme para viajar</span></div>
+    <div class="option"><img src="icons/social.png" alt=""><span>Conectarme con personas</span></div>
+    <div class="option"><img src="icons/diversion.png" alt=""><span>Para divertirme</span></div>
+    <div class="option"><img src="icons/carrera.png" alt=""><span>Impulsar mi carrera profesional</span></div>
+  </div>
+
+  <button class="continue-btn" id="continuar" disabled>CONTINUAR</button>
+
+  <script src="cuestionario.js"></script>
+</body>
+</html>

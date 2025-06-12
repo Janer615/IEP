@@ -1,0 +1,101 @@
+* {
+ font-family: 'Baloo 2', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.registro-container {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+}
+
+.registro-formulario {
+  flex: 1;
+  padding: 50px;
+}
+
+.registro-formulario h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #333;
+}
+
+.subtitulo {
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #666;
+}
+
+.subtitulo a {
+  color: #e26538;
+  text-decoration: none;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+form button {
+  background-color: #e26538;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #e26538;
+}
+
+.registro-imagen {
+    width: 100px;
+  flex: 1;
+  background-color: #f2f6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registro-imagen img {
+  max-width: 80%;
+  height: auto;
+}
+.flecha {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  color: #333;
+  text-decoration: none;
+  user-select: none;
+  z-index: 1000;
+}
+
+.flecha:hover {
+  color: #007BFF;
+}

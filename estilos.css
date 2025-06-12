@@ -1,0 +1,161 @@
+/* Estilo base */
+body {
+    margin: 0;
+    font-family: 'Baloo 2', cursive;
+    background-color: #f7f9fb;
+    color: #333;
+}
+
+/* Navbar estilo Duolingo */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.logo {
+    color: #e26538;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #e26538;
+}
+
+/* Header */
+.header {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #e26538;
+}
+
+/* Cartas */
+.areas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card {
+    background: #fff;
+    width: 150px;
+    padding: 1.2rem 1rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.card .title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.card .students {
+    font-size: 0.9rem;
+    color: #666;
+}
+/* Responsive */
+@media (max-width: 600px) {
+    .areas-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+/* Botón para cambiar de tema */
+.tema-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #e26538;
+    transition: transform 0.2s ease;
+}
+
+.tema-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Modo oscuro */
+body.modo-oscuro {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+body.modo-oscuro .navbar {
+    background-color: #2a2a2a;
+    box-shadow: 0 2px 4px rgba(255,255,255,0.1);
+}
+
+body.modo-oscuro .card {
+    background: #333;
+    color: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}
+
+body.modo-oscuro .card .title,
+body.modo-oscuro .card .students {
+    color: #f0f0f0;
+}
+
+body.modo-oscuro .nav-links a {
+    color: #f0f0f0;
+}
+
+body.modo-oscuro .nav-links a:hover {
+    color: #ffa07a;
+}
+
+body.modo-oscuro .header h1 {
+    color: #ffa07a;
+}
+.logo {
+    height: 50px;
+    width: auto;
+}
+

@@ -1,0 +1,129 @@
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  :root {
+    --bg-color: #0f1117;
+    --text-color: white;
+    --card-bg: #1c1f26;
+    --card-hover: #2e3138;
+    --card-border: #2e3138;
+    --selected-bg: #2c333a;
+    --progress-bg: #333;
+  }
+  
+  body.light {
+    --bg-color: #f4f4f4;
+    --text-color: #111;
+    --card-bg: #ffffff;
+    --card-hover: #e8e8e8;
+    --card-border: #ccc;
+    --selected-bg: #d0f0e0;
+    --progress-bg: #ccc;
+  }
+  
+  .theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .theme-toggle button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .progress {
+    width: 80%;
+    height: 8px;
+    background-color: var(--progress-bg);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #e26538;
+    width: 0%;
+    transition: width 0.5s ease;
+  }
+  
+  .bot {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .bot img {
+    width: 100px;
+    margin-right: 1rem;
+  }
+  
+  .bot .msg {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid var(--card-border);
+  }
+  
+  .options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 2rem;
+  }
+  
+  .option {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .option:hover {
+    background-color: var(--card-hover);
+  }
+  
+  .option.selected {
+    border: 2px solid #e26538;
+    background-color: #dfd0b033
+  }
+  
+  .option img {
+    width: 30px;
+  }
+  
+  .continue-btn {
+    margin-top: 3rem;
+    padding: 0.8rem 2rem;
+    background-color: #2e3138;
+    color: #666;
+    border: none;
+    border-radius: 20px;
+    cursor: not-allowed;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .continue-btn.enabled {
+    background-color: #e26538;
+    color: black;
+    cursor: pointer;
+  }
+  
