@@ -16,7 +16,8 @@
       <div class="section-tag">Lengua Castellana</div>
     </div>
     <div class="header-right">
-      <div class="coin">🪙 1250</div>
+      <button id="theme-toggle">🌙</button>
+      <div class="coin">🪙 <span id="xp">0</span></div>
       <div class="heart">❤️ 5</div>
       <div class="user">Janer</div>
     </div>
@@ -30,51 +31,49 @@
         <div class="level">Avanzado</div>
         <div class="xp-title">XP Total</div>
         <div class="xp-bar">
-          <div class="xp-fill" style="width: 80%;"></div>
+          <div class="xp-fill" id="xp-bar" style="width: 0%;"></div>
         </div>
-        <div class="xp-number">11200 XP</div>
+        <div class="xp-number" id="xp-total">0 XP</div>
       </div>
 
       <div class="card goal">
         <div class="goal-title">Meta Diaria</div>
         <div class="goal-subtitle">Lecciones</div>
         <div class="xp-bar">
-          <div class="xp-fill orange" style="width: 30%;"></div>
+          <div class="xp-fill orange" id="goal-bar" style="width: 0%;"></div>
         </div>
-        <div class="goal-progress">3/10</div>
+        <div class="goal-progress"><span id="daily-progress">0</span>/10</div>
       </div>
 
       <div class="card achievements">
         <div class="goal-title">Logros</div>
-        <div class="achievements-icons">
-          <div class="icon">🏅</div>
-          <div class="icon">🔥</div>
-          <div class="icon">🎯</div>
+        <div class="achievements-icons" id="achievements">
+          <!-- Logros se agregan aquí -->
         </div>
       </div>
     </aside>
 
     <section class="content">
       <h1>Lengua Castellana</h1>
-      <p class="progress-text">Progreso: 0/10 lecciones completadas.</p>
+      <p class="progress-text">Progreso: <span id="completed-count">0</span>/10 lecciones completadas.</p>
 
-      <div class="lessons-grid">
-        <div class="lesson active">
-          <div class="circle">1</div>
-          <span class="status">¡Nueva!</span>
-        </div>
-        <!-- Lecciones bloqueadas -->
-        <div class="lesson locked"><div class="circle">2</div></div>
-        <div class="lesson locked"><div class="circle">3</div></div>
-        <div class="lesson locked"><div class="circle">4</div></div>
-        <div class="lesson locked"><div class="circle">5</div></div>
-        <div class="lesson locked"><div class="circle">6</div></div>
-        <div class="lesson locked"><div class="circle">7</div></div>
-        <div class="lesson locked"><div class="circle">8</div></div>
-        <div class="lesson locked"><div class="circle">9</div></div>
-        <div class="lesson locked"><div class="circle">10</div></div>
+      <div class="lessons-grid" id="lessons">
+        <!-- Se generan automáticamente -->
       </div>
     </section>
   </main>
+
+  <script src="dashboard.js"></script>
+
+ <div id="achievement-popup" class="hidden">
+  <img src="IMGI/logro.png" alt="Icono logro" class="popup-icon" />
+  <div class="popup-text">
+    <strong>Logro desbloqueado:</strong><br />
+    Mi primera clase
+  </div>
+  <audio id="achievement-sound" src="Sound/logro.mp3" preload="auto"></audio>
+</div>
+
+
 </body>
 </html>
