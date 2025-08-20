@@ -65,7 +65,7 @@ boton.addEventListener('click', () => {
     boton.classList.remove('enabled');
     actualizarProgreso();
   } else {
-    window.location.href = "final.html";
+    window.location.href = "../HTML/final.html";
   }
 });
 
